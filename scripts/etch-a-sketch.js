@@ -1,3 +1,7 @@
+function addGrid(){
+    document.getElementById("gridContainer").innerHTML +=  
+    '<div class="gridUnit">Hi</div>';
+}
 
 function addGridFile(cantColumnas){
     for(let i=0;i<cantColumnas;i++){
@@ -7,26 +11,23 @@ function addGridFile(cantColumnas){
     "<br>";   
 }
 
-function addGrid(){
-    document.getElementById("gridContainer").innerHTML +=  
-    '<div class="gridUnit">Hi</div>';
+
+function addGridMatrix(files,rows){
+    if(files==null || rows==null) return;
+    if(!Number.isInteger(files) || !Number.isInteger(rows)) return;
+    if(files<=0 && rows<=0) return;
+    for(let i=0;i<files;i++){
+        addGridFile(rows);
+    }
 }
 
-function changeDivColour(e){
-    e.target.classList.remove("gridWhite");
-    e.target.classList.add("gridBlack");
-}
-
-
-
-for(let i=0;i<16;i++){
-    addGridFile(16);
-}
+addGridMatrix(16,16)
 
 const divs = document.querySelectorAll("div.gridUnit");
 
-console.log(divs)
-
 divs.forEach((grid) => {
-    grid.addEventListener("mouseover", changeDivColour)
+    grid.addEventListener("mouseover", (e)=>{
+        e.target.classList.remove("gridWhite");
+        e.target.classList.add("gridBlack");    
+    })
 })
