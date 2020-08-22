@@ -15,15 +15,10 @@ function addGridFile(cantColumnas){
 }
 
 function addAuxiliarStyles(files,rows){
-    console.log("Files: "+files)
-    console.log("Rows:  "+rows)
     let width= (containerWidth-rows*BORDER_WIDTH*2)/rows;
     let height=width;
-    console.log("width: "+width)
-    console.log("height:  "+height)
     var editCss = document.getElementById("auxiliarStyles");
-    editCss.innerHTML+=`<style>
-    .gridContainerSize{width: ${containerWidth};}
+    editCss.innerHTML+=`<style> .gridContainerSize{width: ${containerWidth};}
     .gridSize {min-width: ${width}px; min-height: ${height}px;}</style>`
 }
 
@@ -105,7 +100,6 @@ document.getElementById("btnChangeSize").addEventListener("click", ()=> {
         alert("Invalid value of size. Please input a numer between 100 and 960")
         size= +prompt("How width (in pixels) do you want?");
     }
-    
     containerWidth=size;
     removeAuxiliarStyles();
     removeGridMatrix();
