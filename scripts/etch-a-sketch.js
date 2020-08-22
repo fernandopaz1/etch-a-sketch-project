@@ -56,8 +56,9 @@ function rand255(){
 function addHoverListener(){
     document.querySelectorAll("div.gridUnit").forEach((grid) => {
         grid.addEventListener("mouseover", (e)=>{
-            if(e.target.style.background==""){
-                e.target.style.background=`rgb(${rand255()},${rand255()},${rand255()})`;
+            let grid=e.target;
+            if(grid.style.background==""){
+                grid.style.background=`rgb(${rand255()},${rand255()},${rand255()})`;
             }
         })
     })
@@ -67,7 +68,7 @@ function addHoverListener(){
 
 document.getElementById("btnClean").addEventListener("click", ()=>{
     document.querySelectorAll("div.gridUnit").forEach((grid) => {
-        grid.style.background="white";
+        grid.style.background="";
     })
 });
 
