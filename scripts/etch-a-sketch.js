@@ -49,18 +49,25 @@ function addGridMatrix(files,rows){
 addGridMatrix(16,16)
 addHoverListener();
 
+function rand255(){
+    return Math.floor(Math.random()*256);
+}
+
 function addHoverListener(){
     document.querySelectorAll("div.gridUnit").forEach((grid) => {
         grid.addEventListener("mouseover", (e)=>{
-            e.target.classList.remove("gridWhite");
-            e.target.classList.add("gridBlack");    
+            if(e.target.style.background==""){
+                e.target.style.background=`rgb(${rand255()},${rand255()},${rand255()})`;
+            }
         })
     })
 }
+
+
+
 document.getElementById("btnClean").addEventListener("click", ()=>{
     document.querySelectorAll("div.gridUnit").forEach((grid) => {
-        grid.classList.remove("gridBlack");
-        grid.classList.add("gridWhite");
+        grid.style.background="white";
     })
 });
 
@@ -100,6 +107,7 @@ document.getElementById("btnChangeSize").addEventListener("click", ()=> {
         alert("Invalid value of size. Please input a numer between 100 and 960")
         size= +prompt("How width (in pixels) do you want?");
     }
+  
     containerWidth=size;
     removeAuxiliarStyles();
     removeGridMatrix();
