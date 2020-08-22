@@ -1,5 +1,13 @@
+#buttons{
+    margin: 0 auto;
+    width: 100%;
+    display:flex;
+    justify-content: center;
+}
+
 #gridContainer {
     margin: auto;
+    max-width: 960px;
     width: auto;
     height: auto;
     border: 3px solid green;
@@ -19,7 +27,10 @@
     background-color: white;
     text-align: center;
     color: white;
-    display: inline;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    /*display: inline;*/
 }
 
 .gridWhite{
@@ -27,7 +38,6 @@
     border: 1px solid black;
     background-color: white;
     text-align: center;
-    display: inline;
 }
 
 .gridBlack{
@@ -36,5 +46,4 @@
     background-color: black;
     color:black;
     text-align: center;
-    display: inline;
 }

@@ -1,6 +1,9 @@
+const containerWidth= 960;
+
+
 function addGrid(){
     document.getElementById("gridContainer").innerHTML +=  
-    '<div class="gridUnit">Hi</div>';
+    '<div class="gridUnit">&nbsp</div>';
 }
 
 function addGridFile(cantColumnas){
@@ -16,6 +19,8 @@ function addGridMatrix(files,rows){
     if(files==null || rows==null) return;
     if(!Number.isInteger(files) || !Number.isInteger(rows)) return;
     if(files<=0 && rows<=0) return;
+
+    
     for(let i=0;i<files;i++){
         addGridFile(rows);
     }
