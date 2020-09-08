@@ -1,3 +1,16 @@
+#title{
+    justify-content: center;
+    background-color: rgb(183, 247, 215);
+    width: 100%;
+    font-style: oblique;
+    color: rgb(51, 51, 51);
+    border-radius: 50px;
+}
+
+body{
+    background-color: rgb(241, 255, 183);
+}
+
 .center{
     margin-left: auto;
     margin-right: auto;
@@ -31,7 +44,7 @@
 .gridUnit {
     margin: 5px;
     margin-left:0.01px;
-    border: 0.01px solid black;
+    /* border: 0.01px solid black; */
     border-radius: 15%;
     text-align: center;
     background-color: white;
