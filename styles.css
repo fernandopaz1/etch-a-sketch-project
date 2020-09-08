@@ -32,9 +32,31 @@
     margin: 5px;
     margin-left:0.01px;
     border: 0.01px solid black;
-    border-radius: 5px;
+    border-radius: 15%;
     text-align: center;
     background-color: white;
     display: inline-block;
 }
 
+
+.button{
+    margin:2%;
+    width: 20%;
+    height: 50px;
+    border-radius: 10px;
+    border:none;
+    background-color: rgb(91, 182, 50);
+    color: rgb(219, 231, 219);
+    font-weight: bolder;
+    font-size: larger;
+    outline: none;
+    box-shadow: 0 5px rgb(122, 122, 122);
+}
+
+.button:hover {background-color: #3e8e41}
+
+.button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
