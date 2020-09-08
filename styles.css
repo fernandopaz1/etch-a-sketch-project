@@ -14,7 +14,7 @@
 #gridContainer {
     margin: auto;
     height: auto;
-    width: 400px;
+    width: fit-content;
     border-radius: 10px;
     background-color: cyan;
     padding: 10px;
@@ -29,8 +29,10 @@
 }
 
 .gridUnit {
-    margin: auto;
+    margin: 5px;
+    margin-left:0.01px;
     border: 0.01px solid black;
+    border-radius: 5px;
     text-align: center;
     background-color: white;
     display: inline-block;
