@@ -1,4 +1,4 @@
-#title{
+#title {
     justify-content: center;
     background-color: rgb(183, 247, 215);
     width: 100%;
@@ -7,20 +7,20 @@
     border-radius: 50px;
 }
 
-body{
+body {
     background-color: rgb(241, 255, 183);
 }
 
-.center{
+.center {
     margin-left: auto;
     margin-right: auto;
-    display:flex;
+    display: flex;
     justify-content: center;
 }
-#buttons{
+#buttons {
     margin: 0 auto;
     width: 100%;
-    display:flex;
+    display: flex;
     justify-content: center;
 }
 
@@ -34,8 +34,7 @@ body{
     text-align: center;
 }
 
-
-.gridFile{
+.gridFile {
     margin: auto;
     padding: 0px;
     text-align: center;
@@ -43,21 +42,28 @@ body{
 
 .gridUnit {
     margin: 5px;
-    margin-left:0.01px;
+    margin-left: 0.01px;
     /* border: 0.01px solid black; */
     border-radius: 15%;
     text-align: center;
     background-color: white;
     display: inline-block;
+    box-shadow: 0 5px rgb(122, 122, 122);
 }
 
+.gridUnit:hover {
+    transform: scale(1.2);
+    background-color: #3e8e41;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
 
-.button{
-    margin:2%;
+.button {
+    margin: 2%;
     width: 20%;
     height: 50px;
     border-radius: 10px;
-    border:none;
+    border: none;
     background-color: rgb(91, 182, 50);
     color: rgb(219, 231, 219);
     font-weight: bolder;
@@ -66,10 +72,12 @@ body{
     box-shadow: 0 5px rgb(122, 122, 122);
 }
 
-.button:hover {background-color: #3e8e41}
+.button:hover {
+    background-color: #3e8e41;
+}
 
 .button:active {
-  background-color: #3e8e41;
-  box-shadow: 0 5px #666;
-  transform: translateY(4px);
+    background-color: #3e8e41;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
 }
