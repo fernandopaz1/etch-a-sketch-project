@@ -4,7 +4,7 @@
     width: 100%;
     font-style: oblique;
     color: rgb(51, 51, 51);
-    border-radius: 50px;
+    border-radius: 3.12rem;
 }
 
 body {
@@ -30,39 +30,42 @@ body {
     width: fit-content;
     border-radius: 10px;
     background-color: cyan;
-    padding: 10px;
+    padding: 0.625rem;
     text-align: center;
+    font-size: 1vw;
 }
 
 .gridFile {
     margin: auto;
-    padding: 0px;
+    padding: 0rem;
     text-align: center;
 }
 
 .gridUnit {
-    margin: 5px;
-    margin-left: 0.01px;
+    /* width: 2em;
+    height: 2em; */
+    margin: 0.31em;
+    margin-left: 0.000625em;
     /* border: 0.01px solid black; */
     border-radius: 15%;
     text-align: center;
     background-color: white;
     display: inline-block;
-    box-shadow: 0 5px rgb(122, 122, 122);
+    box-shadow: 0 0.31em rgb(122, 122, 122);
 }
 
 .gridUnit:hover {
     transform: scale(1.2);
     background-color: #3e8e41;
-    box-shadow: 0 5px #666;
-    transform: translateY(4px);
+    box-shadow: 0 0.31em #666;
+    transform: translateY(0.25em);
     filter: brightness(200%);
 }
 
 .button {
     margin: 2%;
     width: 20%;
-    height: 50px;
+    height: 4.5rem;
     border-radius: 10px;
     border: none;
     background-color: rgb(91, 182, 50);
@@ -70,7 +73,7 @@ body {
     font-weight: bolder;
     font-size: larger;
     outline: none;
-    box-shadow: 0 5px rgb(122, 122, 122);
+    box-shadow: 0 0.31rem rgb(122, 122, 122);
 }
 
 .button:hover {
@@ -79,6 +82,6 @@ body {
 
 .button:active {
     background-color: #3e8e41;
-    box-shadow: 0 5px #666;
-    transform: translateY(4px);
+    box-shadow: 0 0.31rem #666;
+    transform: translateY(0.25rem);
 }

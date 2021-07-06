@@ -14,11 +14,11 @@ function addGridFile(cantColumnas) {
 }
 
 function addAuxiliarStyles(files, rows) {
-    let width = (containerWidth - rows * BORDER_WIDTH * 2) / rows;
+    let width = (containerWidth - rows * BORDER_WIDTH * 2) / rows / 8;
     let height = width;
     var editCss = document.getElementById("auxiliarStyles");
     editCss.innerHTML += `<style> .gridContainerSize{width: ${containerWidth};}
-    .gridSize {min-width: ${width}px; min-height: ${height}px;}</style>`;
+    .gridSize {width: ${width}em; height: ${height}em;}</style>`;
 }
 
 function removeAuxiliarStyles() {
